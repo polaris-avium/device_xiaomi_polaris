@@ -28,8 +28,5 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-# Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
-
 # Inherit from the proprietary version
 include vendor/xiaomi/polaris/BoardConfigVendor.mk
